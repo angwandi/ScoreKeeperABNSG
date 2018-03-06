@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474747">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/colorPrimaryText" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_16"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/columns_A_B">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/team_image"
+                        android:drawableLeft="@drawable/ic_action_name"
+                        android:drawableStart="@drawable/ic_action_name"
+                        android:text="@string/teamA" />
+
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/players"
+                            style="@style/buttons"
+                            android:text="@string/btnPlayersA" />
+
+                        <TextView
+                            android:id="@+id/text_view_players"
+                            style="@style/customeTextStyle"
+                            android:text="@string/playersA" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/score"
+                            style="@style/buttons"
+                            android:onClick="addOneScoreForTeamA"
+                            android:text="@string/btnScoreA" />
+
+                        <TextView
+                            android:id="@+id/text_view_score"
+                            style="@style/customeTextStyle"
+                            android:text="@string/scoreA" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/redCard"
+                            style="@style/buttons"
+                            android:onClick="addOneRedCardForTeamA"
+                            android:text="@string/btnRedCardA" />
+
+                        <TextView
+                            android:id="@+id/text_view_redCard"
+                            style="@style/customeTextStyle"
+                            android:text="@string/redCardA" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/fouls"
+                            style="@style/buttons"
+                            android:onClick="addOneFoulsForTeamA"
+                            android:text="@string/btnFoulsA" />
+
+                        <TextView
+                            android:id="@+id/text_view_fouls"
+                            style="@style/customeTextStyle"
+                            android:text="@string/foulsA" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/freeKick"
+                            style="@style/buttons"
+                            android:onClick="addOnefreeKickForTeamA"
+                            android:text="@string/btnFreeKickA" />
+
+                        <TextView
+                            android:id="@+id/text_view_freeKick"
+                            style="@style/customeTextStyle"
+                            android:text="@string/FreeKickA" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/columns_A_B">
+
+                    <TextView
+                        android:id="@+id/textViewB"
+                        style="@style/team_image"
+                        android:drawableLeft="@drawable/ic_action_name"
+                        android:drawableStart="@drawable/ic_action_name"
+                        android:text="@string/teamB" />
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/playersb"
+                            style="@style/buttons"
+                            android:text="@string/btnPlayersB" />
+
+                        <TextView
+                            android:id="@+id/text_view_playersb"
+                            style="@style/customeTextStyle"
+                            android:text="@string/playersB" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/scoreb"
+                            style="@style/buttons"
+                            android:onClick="addOneScoreForTeamB"
+                            android:text="@string/btnScoreB" />
+
+                        <TextView
+                            android:id="@+id/text_view_scoreb"
+                            style="@style/customeTextStyle"
+                            android:text="@string/scoreB" />
+                    </LinearLayout>
+
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/redCardb"
+                            style="@style/buttons"
+                            android:onClick="addOneRedCardForTeamB"
+                            android:text="@string/btnRedCardB" />
+
+                        <TextView
+                            android:id="@+id/text_view_redCarb"
+                            style="@style/customeTextStyle"
+                            android:text="@string/redCardB" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+                            android:id="@+id/foulsb"
+                            style="@style/buttons"
+                            android:onClick="addOneFoulsForTeamB"
+                            android:text="@string/btnFoulsB" />
+
+                        <TextView
+                            android:id="@+id/text_view_foulsb"
+                            style="@style/customeTextStyle"
+                            android:text="@string/foulsB" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/button_and_text_layout_styling">
+
+                        <Button
+
+                            android:id="@+id/freeKickb"
+                            style="@style/buttons"
+                            android:onClick="addOnefreeKickForTeamB"
+                            android:text="@string/btnFreeKickB" />
+
+                        <TextView
+                            android:id="@+id/text_view_freeKickb"
+                            style="@style/customeTextStyle"
+                            android:text="@string/FreeKickB" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_8"
+                    android:background="@drawable/button_style"
+                    android:onClick="resetAll"
+                    android:text="@string/btnreset" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

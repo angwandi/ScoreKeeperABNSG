@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Score Keeper ABNSG</string>
+
+        <!--TEXTVIEW TEXT-->
+
+        <!--Team A and B text-->
+        <string name="teamA">Team A</string>
+        <string name="teamB">Team B</string>
+
+        <!--Team A text-->
+        <string name="playersA">11</string>
+        <string name="scoreA">0</string>
+        <string name="goalKickA">0</string>
+        <string name="FreeKickA">0</string>
+        <string name="cornerKickA">0</string>
+        <string name="foulsA">0</string>
+        <string name="PenaltyA">0</string>
+        <string name="thrownInA">0</string>
+        <string name="offSideA">0</string>
+        <string name="redCardA">0</string>
+        <string name="yelowCardA">0</string>
+
+        <!--Team B text-->
+        <string name="playersB">11</string>
+        <string name="scoreB">0</string>
+        <string name="goalKickB">0</string>
+        <string name="FreeKickB">0</string>
+        <string name="cornerKickB">0</string>
+        <string name="foulsB">0</string>
+        <string name="PenaltyB">0</string>
+        <string name="thrownInB">0</string>
+        <string name="offSideB">0</string>
+        <string name="redCardB">0</string>
+        <string name="yelowCardB">0</string>
+
+        <!--Drop ball text-->
+        <string name="droppedBall">0</string>
+
+        <!--BUTTONS TEXT-->
+
+        <!--Reset button-->
+        <string name="btnreset">reset</string>
+
+        <!--Team A buttons-->
+        <string name="btnPlayersA">players</string>
+        <string name="btnScoreA">score</string>
+        <string name="btnGoalKickA">goal kick</string>
+        <string name="btnCornerKickA">corner kick</string>
+        <string name="btnFreeKickA">free kick</string>
+        <string name="btnRedCardA">red card</string>
+        <string name="btnFoulsA">fouls</string>
+        <string name="btnYellowCardA">yellow card</string>
+        <string name="btnPenaltyA">penalty</string>
+        <string name="btnThrownInA">thrown-in</string>
+        <string name="btnOffSideA">off side</string>
+
+        <!--Team B buttons-->
+        <string name="btnPlayersB">players</string>
+        <string name="btnScoreB">score</string>
+        <string name="btnGoalKickB">goal kick</string>
+        <string name="btnCornerKickB">corner kick</string>
+        <string name="btnFreeKickB">free kick</string>
+        <string name="btnRedCardB">red card</string>
+        <string name="btnFoulsB">fouls</string>
+        <string name="btnYellowCardB">yellow card</string>
+        <string name="btnPenaltyB">penalty</string>
+        <string name="btnThrownInB">thrown-in</string>
+        <string name="btnOffSideB">off side</string>
+
+        <!--CONTENT DESCRIPTIONS-->
+
+    <string name="imgCD">football</string>
+    </resources>
+
