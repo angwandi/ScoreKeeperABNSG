@@ -26,3 +26,17 @@ Projects using Kotlin as the source code will not be accepted.
 ## Screenshots of completed project: Reviewed and passed by Udacity 07/03/2018
 
 > Made by 2ms
+
+![screenshot_1523197341](https://user-images.githubusercontent.com/31923567/38468614-de5f9490-3b40-11e8-8578-51a6434b43bb.png)
+
+> Made by 2ms
+![screenshot_1523197346](https://user-images.githubusercontent.com/31923567/38468616-e1e2eb80-3b40-11e8-99ef-6fbc7eb58652.png)
+
+> Made by 2ms
+![screenshot_1523197358](https://user-images.githubusercontent.com/31923567/38468617-e202444e-3b40-11e8-8c3c-abcf84ff197b.png)
+
+> Made by 2ms
+![screenshot_1523197378](https://user-images.githubusercontent.com/31923567/38468618-e218d01a-3b40-11e8-85c8-4827792b83f7.png)
+
+> Made by 2ms
+
