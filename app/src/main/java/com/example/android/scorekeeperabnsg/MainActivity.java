@@ -10,7 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     /* Variable declarations */
     int scoreTeamA = 0;
     int freeKick = 0;
@@ -56,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
         displayFreeKickForTeamA(freeKick);
     }
 
+
     /* Display the redCard for team A*/
+
     public void displayRedCardForTeamA(int redcardA) {
         TextView redCardView = findViewById(R.id.text_view_redCard);
         redCardView.setText(String.valueOf(redcardA));
@@ -68,8 +69,9 @@ public class MainActivity extends AppCompatActivity {
     public void addOneRedCardForTeamA(View view) {
         if (redCard == 11) {
             //Show an error message as a toast
-            Toast.makeText(this,"No more than 11 Red Cards", Toast.LENGTH_SHORT).show();
-            return;}
+            Toast.makeText(this, "No more than 11 Red Cards", Toast.LENGTH_SHORT).show();
+            return;
+        }
         redCard = redCard + 1;
         players = players - 1;
         displayRedCardForTeamA(redCard);
@@ -114,9 +116,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /* Display the redCard for team B*/
-    public void displayRedCardForTeamB(int redcardB) {
+    public void displayRedCardForTeamB(int redCardB) {
         TextView redCardbView = findViewById(R.id.text_view_redCarb);
-        redCardbView.setText(String.valueOf(redcardB));
+        redCardbView.setText(String.valueOf(redCardB));
         TextView playerbView = findViewById(R.id.text_view_playersb);
         playerbView.setText(String.valueOf(playersTeamB));
     }
@@ -125,8 +127,9 @@ public class MainActivity extends AppCompatActivity {
     public void addOneRedCardForTeamB(View view) {
         if (redCardTeamB == 11) {
             //Show an error message as a toast
-            Toast.makeText(this,"No more than 11 Red Cards", Toast.LENGTH_SHORT).show();
-            return;}
+            Toast.makeText(this, "No more than 11 Red Cards", Toast.LENGTH_SHORT).show();
+            return;
+        }
         redCardTeamB = redCardTeamB + 1;
         playersTeamB = playersTeamB - 1;
         displayRedCardForTeamB(redCardTeamB);
@@ -144,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
         displayFoulsForTeamB(foulsTeamB);
     }
 
-/* Reset All.*/
+    /* Reset All.*/
 
     public void resetAll(View view) {
         scoreTeamA = 0;
@@ -165,8 +168,6 @@ public class MainActivity extends AppCompatActivity {
         displayRedCardForTeamB(redCardTeamB);
         displayFoulsForTeamA(fouls);
         displayFoulsForTeamB(foulsTeamB);
-
     }
-
 }
 
