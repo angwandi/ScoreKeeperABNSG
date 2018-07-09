@@ -18,7 +18,7 @@ This project is about combining various ideas and skills we’ve been practicing
 - Updating views
 - Properly scoping variables
 - Finding views by their ID
-- Handle configuration changes using ViewModel
+- Handle configuration changes using **ViewModel**
 
 **Note:** As the focus of this program is Java, only projects completed with Java as the source code will 
 be accepted. 
